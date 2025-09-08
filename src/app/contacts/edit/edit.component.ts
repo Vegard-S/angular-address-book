@@ -43,7 +43,7 @@ export class EditComponent {
     };
     this.contactsService.editContact(updatedContact);
     this.contactForm.reset();
-    this.router.navigate(['/contacts']);
+    this.router.navigate([`/contacts/view/${this.contactId}`]);
   }
 
   ngOnInit() {
